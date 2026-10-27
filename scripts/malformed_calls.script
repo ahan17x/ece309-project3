@@ -1,0 +1,11 @@
+role: assistant
+Broken JSON: <|tool_call|>{"id":"m1","name":"calculator","arguments":{"expression":"1+1"}<|/tool_call|>
+---
+role: assistant
+Unknown tool: <|tool_call|>{"id":"m2","name":"launch_rockets","arguments":{}}<|/tool_call|>
+---
+role: assistant
+Bad arguments: <|tool_call|>{"id":"m3","name":"calculator","arguments":{"expression":"10 / (5 - 5)"}}<|/tool_call|>
+---
+role: assistant
+Every failure came back as data, and I'm still running.<|end_conversation|>

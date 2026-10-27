@@ -1,0 +1,24 @@
+role: system
+This script walks through every built-in tool.
+---
+role: assistant
+Sure, let me look at your todo list.<|tool_call|>{"id":"c1","name":"read_file","arguments":{"path":"notes/todo.txt"}}<|/tool_call|>
+---
+role: assistant
+You have three items: buy milk, write the hash table, and finish project 3.
+---
+role: assistant
+Let me work that out.<|tool_call|>{"id":"c2","name":"calculator","arguments":{"expression":"(12 + 30) * 2 / 7"}}<|/tool_call|>
+---
+role: assistant
+(12 + 30) * 2 / 7 = 12.
+---
+chunk: 7
+role: assistant
+Saving a note and listing the folder.<|tool_call|>{"id":"c3","name":"write_file","arguments":{"path":"notes/summary.txt","content":"3 todo items\n"}}<|/tool_call|><|tool_call|>{"id":"c4","name":"list_dir","arguments":{"path":"notes"}}<|/tool_call|>
+---
+role: assistant
+Done: notes/summary.txt is saved next to todo.txt.
+---
+role: assistant
+Goodbye!<|end_conversation|>

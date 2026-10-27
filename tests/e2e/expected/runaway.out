@@ -1,0 +1,11 @@
+you> assistant> <|tool_call|>{"id":"r1","name":"calculator","arguments":{"expression":"1"}}<|/tool_call|>
+[tool calculator r1 -> ok] 1
+assistant> <|tool_call|>{"id":"r2","name":"calculator","arguments":{"expression":"2"}}<|/tool_call|>
+[tool calculator r2 -> ok] 2
+assistant> <|tool_call|>{"id":"r3","name":"calculator","arguments":{"expression":"3"}}<|/tool_call|>
+[tool step limit reached; returning to user]
+you> assistant> <|tool_call|>{"id":"r4","name":"calculator","arguments":{"expression":"4"}}<|/tool_call|>
+[tool calculator r4 -> ok] 4
+assistant> OK, I'll stop.
+[conversation ended: Stop sentinel detected]
+[exit 0]

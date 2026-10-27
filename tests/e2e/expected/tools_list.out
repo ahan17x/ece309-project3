@@ -1,0 +1,9 @@
+- calculator: Evaluate an arithmetic expression and return the numeric result.
+  parameters: {"type":"object","properties":{"expression":{"type":"string","description":"Arithmetic using + - * / and parentheses, e.g. \"(2+3)*4\""}},"required":["expression"]}
+- list_dir: List a directory inside the workspace: sorted entries with file sizes.
+  parameters: {"type":"object","properties":{"path":{"type":"string","description":"Directory relative to the workspace root (default \".\")"},"recursive":{"type":"boolean","description":"Descend into subdirectories (default false)"}},"required":[]}
+- read_file: Read a text file inside the workspace and return its contents.
+  parameters: {"type":"object","properties":{"path":{"type":"string","description":"File path relative to the workspace root"},"max_bytes":{"type":"number","description":"Maximum number of bytes to return"}},"required":["path"]}
+- write_file: Write (or append) text to a file inside the workspace, creating parent directories.
+  parameters: {"type":"object","properties":{"path":{"type":"string","description":"File path relative to the workspace root"},"content":{"type":"string","description":"Text to write"},"append":{"type":"boolean","description":"Append instead of overwriting (default false)"}},"required":["path","content"]}
+[exit 0]

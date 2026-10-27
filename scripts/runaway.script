@@ -1,0 +1,14 @@
+role: assistant
+<|tool_call|>{"id":"r1","name":"calculator","arguments":{"expression":"1"}}<|/tool_call|>
+---
+role: assistant
+<|tool_call|>{"id":"r2","name":"calculator","arguments":{"expression":"2"}}<|/tool_call|>
+---
+role: assistant
+<|tool_call|>{"id":"r3","name":"calculator","arguments":{"expression":"3"}}<|/tool_call|>
+---
+role: assistant
+<|tool_call|>{"id":"r4","name":"calculator","arguments":{"expression":"4"}}<|/tool_call|>
+---
+role: assistant
+OK, I'll stop.<|end_conversation|>

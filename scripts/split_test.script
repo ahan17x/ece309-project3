@@ -1,0 +1,6 @@
+role: user
+hi
+---
+chunk: 5
+role: assistant
+Hello! I am going to say goodbye now.<|end_conversation|>
